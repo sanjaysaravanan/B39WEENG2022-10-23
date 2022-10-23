@@ -1,0 +1,8 @@
+.weather-div {
+  width: fit-content;
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  color: #fff;
+}

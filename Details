@@ -1,0 +1,81 @@
+
+Promise:
+  Chaining
+    chaining of promise(return of promise) at the end of a resolvement
+    chaining of promise make one promise depend on its parent promise
+    amount of time is cumulative/added up
+
+  All:
+    simultaneous triggering for multiple independent promise objects.
+    which will resolve only when all the promise are resolved.
+    will get rejected if one or more promises are rejected
+
+    input: array of promises
+    output: array of resolved values
+  
+  disadvantage of promise:
+    Too much of Chaining leads to uncertain
+
+Go thorugh online about below,
+  API ---> Application Programming Interface
+
+    APIs are the communication between services( backend, front-end, payment, ... ) can be using JSON, XML etc...
+
+    State of an application using APIs ---> REST APIs --> representational state transfer
+
+    Likes for Post:
+      Day One: 
+        {
+          name: 'Dog Picture',
+          likes: 100
+        }
+      Day Two:
+        {
+          name: 'Dog Picture',
+          likes: 200
+        }
+
+Fetch:
+
+  Fetch -> Interface to make an api call
+    then ---> response --> convert response to json -> promsie .then (json -> operation on json)
+  
+  fetch API ---> Fetch is used to read data / or do an http operation
+    which return a promise with response containing the readable stream
+    Handle by .then & .catch
+
+Error Handling:
+  try:
+    takes the statements which is prone to throw error and throws in to catch block
+
+  catch:
+    execute the error cases statements
+  
+  finally:
+    always execute statemet inside irrespective of error or not
+
+async and await:
+  async & await --> 
+    1. async keyword is used before a function which does asynchronous operations.
+    2. which makes the functions to wait for asynchronous action until there resoltion/rejection using await
+
+  1. Publics APIs
+    Look for You requirement & Choose a type of API
+    Use APIs which has HTTPS & CORS enabled
+    If Signing is fine Go for Auth, HTTPS, CORS enabled
+
+    Read the Documentation Test the API before choosing it
+
+  2. Implementation of DOM manipulation examples
+    1. Email Verify examples
+    2. Get City weather examples
+
+  3. Design Ideas, https://spicey-hut.netlify.app/recipe.html, https://shoppingcart-spicyhut.netlify.app/#header
+
+  intro to public APIs ---> Choose public APIs based on the API_key, Https, Cors
+
+  https://api.openweathermap.org/data/2.5/weather?q=Chennai&appid=991f626650507e6605c2ca33f8edc191
+
+
+
+  
