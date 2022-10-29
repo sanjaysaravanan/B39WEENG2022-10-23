@@ -1,6 +1,6 @@
 
 Promise:
-  Chaining
+  Chaining ( of dependent promises )
     chaining of promise(return of promise) at the end of a resolvement
     chaining of promise make one promise depend on its parent promise
     amount of time is cumulative/added up
@@ -12,6 +12,7 @@ Promise:
 
     input: array of promises
     output: array of resolved values
+    catch: reason rejected promise
   
   disadvantage of promise:
     Too much of Chaining leads to uncertain
@@ -21,7 +22,7 @@ Go thorugh online about below,
 
     APIs are the communication between services( backend, front-end, payment, ... ) can be using JSON, XML etc...
 
-    State of an application using APIs ---> REST APIs --> representational state transfer
+    Transferring State of an application using APIs ---> REST APIs --> representational state transfer
 
     Likes for Post:
       Day One: 
@@ -45,15 +46,16 @@ Fetch:
     Handle by .then & .catch
 
 Error Handling:
-  try:
+  try {
     takes the statements which is prone to throw error and throws in to catch block
-
-  catch:
+  }
+  catch (error) {
     execute the error cases statements
-  
-  finally:
+  }
+  finally {
     always execute statemet inside irrespective of error or not
-
+    used for clean
+  }
 async and await:
   async & await --> 
     1. async keyword is used before a function which does asynchronous operations.
